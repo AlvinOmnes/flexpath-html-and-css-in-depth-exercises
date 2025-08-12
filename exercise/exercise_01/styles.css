@@ -1,4 +1,20 @@
   h1 {
-            color: blue;
+            color: white;
             font-family: Arial, sans-serif;
         }
+  .container {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20;
+  }
+  body{
+    background-color: #f0f0f0;
+  }
+
+  header{
+    background-image: url('https://i.pinimg.com/originals/63/ff/18/63ff187fd8c24108222a9dadb0d166ed.jpg');
+    background-size: cover;
+    color: white;
+    padding: 50px;
+    text-align: center;
+  }
