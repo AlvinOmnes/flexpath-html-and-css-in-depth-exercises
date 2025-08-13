@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise 01 Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleMenu() {
+            const navLinks= document.getElementbyId('nav-links');
+            if (navLinks.classList.contains('show')) {
+                navLinks.classList.remove('show');
+            } else {
+                navLinks.classList.add('show');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1 id="main-title">This is H1 of Exercise 01</h1>
+        <nav class="responsive-nav">
+            <div class="menu-icon" onClick="toggleMenu()">☰</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+        <section>
+            <section class="gallery">
+                <img src="https://www.nps.gov/npgallery/GetAsset/cfcdf0ab-1dd8-b71b-0b59-864782fa1717/proxy/hires?" alt="photo1">
+                <img src="https://www.nps.gov/npgallery/GetAsset/cffd845e-1dd8-b71b-0be8-be270f325eb5/proxy/hires?" alt="photo2">
+                <img src="https://www.nps.gov/npgallery/GetAsset/d0032fd6-1dd8-b71b-0bce-338c114a7b70/proxy/hires?" alt="photo3">
+                <img src="https://www.nps.gov/npgallery/GetAsset/d0292ba0-1dd8-b71b-0bef-d90ab09ad91d/proxy/hires?" alt="photo4">
+                <img src="https://www.nps.gov/npgallery/GetAsset/d05499b5-1dd8-b71b-0b38-6d5b42fe1c53/proxy/hires?" alt="photo5">
+                <img src="https://www.nps.gov/npgallery/GetAsset/d07943b2-1dd8-b71b-0b6d-6115fb5c2875/proxy/hires?" alt="photo6">
+            </section>
+        </section>
+    </header>
+    <main>
+        <div class="container">
+        <h2>This is H2: About me</h2>
+        <p>This is p: I am a student</p>
+        
+        <p>This paragraph is blue</p>
+        
+        <section class="highlight">
+        <p>This paragraph is green</p>
+        </section>
+        <section>
+            <h3>Hobbies</h3>
+            <ul>
+                <li class="highlight">Favorite hobby 1</li>
+                <li class="highlight">Favorite hobby 2</li>
+                <li class="highlight">Faborite hobby 3</li>
+            </ul>
+            <img src="https://i.pinimg.com/736x/3f/99/8b/3f998bd7af438bf853886d30ca8764f9--colorized-photos-old-photos.jpg"
+                alt="Coldplay Cam">
+        </section>
+        </div>
+    </main>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+<footer class="site-footer">
+    <p>&copy; Website Footer</p>    
+</footer>
+</html>
